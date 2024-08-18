@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exams Management - School Management System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        .sidebar {
+            background-color: #343a40;
+            height: 100vh;
+        }
+        .sidebar .nav-link {
+            color: #ffffff !important;
+        }
+        .sidebar .nav-link.active {
+            background-color: #495057;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .table thead {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+        .table tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        .card {
+            margin-top: 20px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .btn-primary, .btn-warning, .btn-danger {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Panel -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">School Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="Dashboard.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="Attendance.html">Attendance</a></li>
+                <li class="nav-item"><a class="nav-link" href="Exams.html">Exams</a></li>
+                <li class="nav-item"><a class="nav-link" href="FeesPayment.html">Fees</a></li>
+                <li class="nav-item"><a class="nav-link" href="StudyMaterial.html">Study Material</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="Dashboard.html">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Attendance.html">Attendance</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Exams.html">Exams</a></li>
+                        <li class="nav-item"><a class="nav-link" href="FeesPayment.html">Fees Payment</a></li>
+                        <li class="nav-item"><a class="nav-link" href="StudyMaterial.html">Study Material</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Main Content Area -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 main-content">
+                <h1 class="h2">Exams Management</h1>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Exams List</h4>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <button class="btn btn-primary">Add Exam</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Exam Name</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Class</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Math Exam</td>
+                                    <td>2024-08-01</td>
+                                    <td>09:00 AM</td>
+                                    <td>5A</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-warning">Edit</button>
+                                        <button class="btn btn-sm btn-danger">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Science Exam</td>
+                                    <td>2024-08-02</td>
+                                    <td>11:00 AM</td>
+                                    <td>5B</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-warning">Edit</button>
+                                        <button class="btn btn-sm btn-danger">Delete</button>
+                                    </td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 School Management System. All rights reserved.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
